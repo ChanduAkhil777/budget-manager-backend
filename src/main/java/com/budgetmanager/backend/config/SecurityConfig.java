@@ -49,8 +49,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         // --- THIS LINE MUST MATCH YOUR REACT PORT ---
-        configuration.setAllowedOrigins(List.of("https://chanduakhil777.github.io"));
-        // ---
+        configuration.setAllowedOrigins(List.of("https://chanduakhil777.github.io"));   // ---
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
